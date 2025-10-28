@@ -1,0 +1,297 @@
+.student-main {
+  display: flex;
+  height: calc(100vh - 120px);
+  background: #f5f5f5;
+}
+
+.student-sidebar {
+  width: 280px;
+  background: white;
+  padding: 20px;
+  border-right: 2px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-sidebar h3 {
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+}
+
+.student-sidebar button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  background: #f8f9fa;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.student-sidebar button:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.student-sidebar button.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.student-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Enrollment Styles */
+.project-enrollment h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 2px solid #e0e0e0;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.enroll-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background: #218838;
+}
+
+/* Form Styles */
+.proposal-form,
+.documentation-form {
+  max-width: 700px;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Progress Tracker Styles */
+.progress-tracker h2 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.progress-steps {
+  margin-bottom: 40px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border-left: 5px solid #6c757d;
+  transition: all 0.3s ease;
+}
+
+.progress-step.completed {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.progress-step.under-review {
+  background: #fff3cd;
+  border-left-color: #ffc107;
+}
+
+.progress-step.pending,
+.progress-step.not-started {
+  background: #f8d7da;
+  border-left-color: #dc3545;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #6c757d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progress-step.completed .step-number {
+  background: #28a745;
+}
+
+.progress-step.under-review .step-number {
+  background: #ffc107;
+}
+
+.step-info h4 {
+  margin: 0 0 5px 0;
+  color: #495057;
+}
+
+.step-info p {
+  margin: 2px 0;
+  color: #6c757d;
+}
+
+/* Progress Statistics */
+.progress-stats {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.progress-stats h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e9ecef;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-card h4 {
+  margin: 0 0 10px 0;
+  color: #495057;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .student-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

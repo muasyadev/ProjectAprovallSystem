@@ -1,0 +1,144 @@
+.lecturer-main {
+  display: flex;
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: "Poppins", sans-serif;
+}
+
+.lecturer-sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.lecturer-sidebar h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #facc15;
+}
+
+.lecturer-sidebar button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.lecturer-sidebar button:hover,
+.lecturer-sidebar button.active {
+  background: #374151;
+  color: #facc15;
+}
+
+.lecturer-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* --- Proposal Section --- */
+.proposal-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.proposal-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.approve-btn {
+  background: #16a34a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: #dc2626;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background: #15803d;
+}
+
+.reject-btn:hover {
+  background: #b91c1c;
+}
+
+/* --- Documentation Section --- */
+.docs-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.doc-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.doc-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.doc-card a:hover {
+  text-decoration: underline;
+}
+
+/* --- Progress Section --- */
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.progress-table th,
+.progress-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.progress-table th {
+  background: #1f2937;
+  color: white;
+}
+
+.progress-table tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.progress-table tr:hover {
+  background: #e5e7eb;
+}
