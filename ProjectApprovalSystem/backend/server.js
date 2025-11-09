@@ -69,6 +69,7 @@ app.use("/api/lecturer", lecturerRoutes);
 app.use("/api/hod", hodRoutes);
 
 app.get("/api/health", (_, res) => res.json({ status: "OK" }));
+app.get("/", (_, res) => res.send("backend is running"));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on ${PORT}`));
