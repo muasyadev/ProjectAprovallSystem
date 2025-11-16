@@ -132,7 +132,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await authAPI.me(); // GET /api/auth/me
+        const res = await authAPI.getProfile(); // GET /api/auth/me
         if (res.data.success && res.data.user) {
           setUser(res.data.user);
         } else {
